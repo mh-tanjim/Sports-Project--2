@@ -1,0 +1,734 @@
+/* ======================== font links css part start ==================== */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Yellowtail&display=swap');
+/* ------------------------ font links css part end   -------------------- */
+
+/* ======================== common css part start ==================== */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+:root{
+    --ibm:"IBM Plex Sans", sans-serif;
+    --brand_color:#FF9600;
+    --yellotail: "Yellowtail", cursive;
+    --inter: "Inter", sans-serif;
+}
+.common_head h2{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: var(--yellotail);
+    color: #49C4F5;
+}
+.common_head h3{
+    width: 598px;
+    font-size: 54px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #222;
+    margin-bottom: 29px;
+}
+.common_head{
+    position: relative;
+}
+.common_head::after{
+    content: "";
+    width:83px ;
+    height: 1px;
+    background: #000;
+    position: absolute;
+}
+/* ------------------------ common css part end   -------------------- */
+
+/* ======================== nav bar css part start ==================== */
+#main_manu{
+    width: 100%;
+    padding-top: 25px;
+    position: absolute;
+}
+.menu_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_row .logo img{
+    width: 225px;
+}
+.menu_row .manu_part ul{
+    display: flex;
+    gap: 53px;
+}
+.menu_row .manu_part ul li a{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #ffffff;
+    transition: all linear .3s;
+}
+.menu_row .manu_part ul li a:hover{
+    color: var(--brand_color);
+}
+.menu_row .manu_part ul li a:active{
+    transform: scale(1.2);
+}
+.manu_part ul li{
+    position: relative;
+}
+.manu_part ul li ul{
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    left: 41%;
+    transform: translateX(-50%);
+    position: absolute;
+    border-radius: 10px;
+    color: #ffffff;
+    align-items: center;
+    padding: 10px;
+    transition: all linear .3s;
+    z-index: -1;
+    gap: 15px!important;
+    opacity: 0;
+}
+.manu_part ul li:hover ul{
+    opacity: 1;
+    z-index: 1;
+
+}
+
+.menu_row .manu_button a{
+    padding: 20px 51px 21px;
+    background-color: var(--brand_color);
+    font-family: var(--ibm);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px;
+    color: #ffffff;
+    transition: all linear .3s;
+}
+.menu_row .manu_button a:hover{
+    background-color: #ffffff;
+    color: var(--brand_color)
+}
+.menu_row .manu_button a:active{
+    transform: scale(1.1);
+}
+/* ------------------------ nav bar css part end   -------------------- */
+
+/* ======================== banner part start ==================== */
+#banner{
+    background: url(../images/banner_background.png);
+    padding-top: 240px;
+    padding-bottom: 212px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner_text h1{
+    width: 819px;
+    font-size: 72px;
+    font-family: var(--ibm);
+    color: #ffffff;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner_button{
+    display: flex;
+    gap: 57px;
+    justify-content: center;
+    margin-top: 48px;
+
+}
+.banner_button a{
+    padding: 20px 40px;
+    background: var(--brand_color);
+    font-size: 18px;
+    font-family: var(--ibm);
+    font-weight: 700;
+    border-radius: 10px;
+    color: #ffffff;
+    transition: all linear .3s;
+}
+.banner_button a:hover{
+    background-color: #ffffff;
+    color: var(--brand_color)
+}
+.banner_button a:active{
+    transform: scale(1.1);
+}
+/* ------------------------ banner part end   -------------------- */
+
+/* ======================== adventures css part start ==================== */
+#adventures{
+    padding-top: 105px;
+    padding-bottom: 100px;
+}
+.adventures_row{
+    display: flex;
+    justify-content: space-between;
+}
+.adventures_row .adventures_text p{
+    width: 597px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #000;
+    margin-top: 68px;
+    margin-bottom: 36px;
+}
+.adventures_text .options{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.adventures_text .options .single_options{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.adventures_text .options .single_options span{
+    width: 30px;
+    height: 30px;
+    background: #c4c4c4;
+    border-radius: 100%;
+    display: inline-block;
+}
+.adventures_text .options .single_options p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #000;
+    margin: 0;
+}
+.adventures_button a{
+    width: 200px;
+    height: 62px;
+    background: var(--brand_color);
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 44px;
+    transition: all linear .3s;
+}
+.adventures_button a:hover{
+    background-color: black;
+    color: #ffffff;
+}
+.adventures_button a:active{
+    transform: scale(1.1);
+}
+.adventures_photo .photo_1{
+    width: 299px;
+    margin-right: 50px;
+}
+.adventures_photo .photo_2{
+    width: 294px;
+}
+/* ------------------------ adventures css part end   -------------------- */
+
+/* ======================== counting css part start ==================== */
+#count_part{
+    margin-bottom: 100px;
+}
+.counting{
+    display: flex;
+    gap: 24px;
+}
+.counting .single_count{
+    width: 312px;
+    height: 150px;
+    background: #FFF4E5;
+   
+}
+.counting .single_count h2{
+    font-size: 80px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    text-align: center;
+}
+
+.counting .single_count p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    text-align: center;
+}
+.counting .two{
+    background: #E7FDE9;
+}
+.counting .three{
+    background: #F2F2FD;
+}
+.counting .four{
+    background: #FFF4E5;
+}
+
+
+
+/* ------------------------ counting css part end   -------------------- */
+
+
+/* ======================== sports activities css part start ==================== */
+#sports_activities{
+    background: #0C3543;
+    padding-top: 110px;
+}
+.sports_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sports_head .common_head::after{
+    content: "";
+    width:81px ;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+}
+.sports_head .common_head h2{
+    color: var(--brand_color);
+}
+.sports_head .common_head h3{
+    color: #ffffff;
+}
+.sports_head .sports_head_text p{
+    width: 622px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #ffffff;
+} 
+.sports_cards_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 99px;
+    row-gap: 50px;
+    column-gap: 24px;
+}
+
+.sports_cards_row .single_sports_card{
+    width: 424px;
+}
+.single_sports_card .sports_card_text{
+    padding-top: 37px;
+    padding-bottom: 40px;
+    background: #0F4152;
+    border-radius: 15px;
+}
+.single_sports_card .sports_card_text h2{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--inter);
+    color: #ffffff;
+    text-align: center;
+    transition: all linear.4s;
+}
+.single_sports_card .sports_card_text:hover h2{
+    color: var(--brand_color);
+}
+.single_sports_card .sports_card_text p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--inter);
+    color: #ffffff;
+    text-align: center;
+    margin-top: 15px;
+}
+.single_sports_card .sports_card_image{
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.single_sports_card .sports_card_image img{
+    transition: all linear .3s;
+}
+.single_sports_card .sports_card_image img:hover{
+    transform: scale(1.1);
+}
+.sports_lower_image{
+    margin-top: 117px;
+}
+.connector{
+    width: 100%;
+}
+/* ------------------------ sports activities css part end   -------------------- */
+
+/* ======================== sports_videos css part start ==================== */
+#sports_videos{
+    padding-top: 30px;
+    background: var(--brand_color);
+    padding-bottom: 495px;
+}
+#sports_videos .sports_video_container{
+    position: relative;
+}
+.sports_videos_logo{
+    text-align: center;
+}
+.sports_videos_logo img{
+    width: 103px;
+}
+.sports_videos_head h2{
+    font-size: 54px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    text-align: center;
+    margin-top: 29px;
+    margin-bottom: 51px;
+}
+.sports_videos_head h3{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    text-align: center;
+}
+.sports_video_button{
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    margin-top: 56px;
+}
+.sports_video_button a{
+    padding: 23px 43px;
+    border-radius: 10px;
+    background: #0C3543;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+}
+.sports_video_card_row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    bottom: -550px;
+}
+.sports_video_card_row .sports_video_card{
+    width: 395px;
+    height: 447px;
+    border-radius: 15px;
+    background: url(../images/sports_videos_1.png);
+    padding-left: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.sports_video_card h2{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+}
+.sports_video_card h3{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff; 
+    margin-top: 27px;
+    margin-bottom: 30px;
+}
+.sports_video_card span{
+    width: 260px;
+    height: 2px;
+    background:#A0A0A0 ;
+    display: inline-block;
+    margin-top: 38px;
+}
+.sports_video_card p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #A0A0A0;
+    margin-top: 28px;
+    margin-bottom: 23px;
+}
+.sports_video_card_row .two_2{
+    background: url(../images/sports_videos_2.png);
+}
+
+.sports_video_card_row .three_3{
+    background: url(../images/sports_videos_3.png);
+}
+/* ------------------------ sports_videos css part end   -------------------- */
+
+/* ======================== why_choose css part start ==================== */
+#why_choose{
+    padding-top: 239px;
+}
+.double_2 {
+    text-align: center;
+
+}
+.double_2 h2{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: var(--yellotail);
+    color: #49C4F5;
+}
+.double_2 h4{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #000;
+    margin-top: 29px;
+    margin-bottom: 29px;
+}
+.double_2 span{
+    width:100px ;
+    height: 2px;
+    background: #A0A0A0;
+    display: inline-block;
+}
+.team_expart{
+    display: flex;
+    justify-content: space-between;
+}
+.team_mate{
+    width: 275px;
+    text-align: center;
+}
+.single_team_mate img{
+    width: 150px;
+    margin-top: 81px;
+}
+.team_text h2{
+    width: 275px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #000;
+    margin-top: 60px;
+    text-align: center;
+}
+.team_text p{
+    width: 275px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #000;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 230px;
+}
+/* ------------------------ why_choose css part end   -------------------- */
+
+/* ======================== news css part start ==================== */
+.news_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news_head .common_head::after{
+    content: "";
+    width:85px ;
+    height: 2px;
+    background: #000;
+    position: absolute;
+}
+.news_head .common_head h2{
+    color: var(--brand_color);
+}
+.news_head .common_head h3{
+    width: 407px;
+    color: #000;
+}
+.news_head .sports_head_text p{
+    width: 619px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #000;
+} 
+
+.blog_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 123px;
+    justify-content: space-between;
+}
+.single_blog .blog_card_image{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.blog_row .single_blog{
+    width: 424px;
+}
+.single_blog .blog_card_text{
+    width: 424px;
+    padding-top: 38px;
+    padding-bottom: 32px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+}
+.single_blog .blog_card_text h2{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #000;
+    justify-content: center;
+}
+
+.single_blog .blog_card_text p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #000;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 42px;
+}
+.single_blog .blog_card_text span{
+    width: 424px;
+    height: 1px;
+    background:#000 ;
+    display: inline-block;
+    margin-bottom: 44px;
+}
+.single_blog .blog_card_text a{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    text-align: center;
+    color: var(--brand_color);
+    transition: all linear .3s;
+}
+.single_blog .blog_card_text a:hover{
+    color: #14B9F1;
+}
+
+/* ------------------------ news css part end   -------------------- */
+
+/* ======================== sponsor_logo css part start ==================== */
+#sponsor_logo{
+    margin-top: 265px;
+}
+#sponsor_logo .logo_row{
+    display: flex;
+    justify-content: space-between;
+}
+.logo_row img{
+    width: 160px;
+}
+
+/* ------------------------ sponsor_logo css part end   -------------------- */
+
+/* ======================== footer css part start ==================== */
+#footer{
+    margin-top: 42px;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    background: #0C3543;
+    position: relative;
+}
+.footer_content{
+    display: flex;
+    justify-content: end;
+}
+.footer_content .footer_main_image{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.footer_content .footer_main_image img{
+    width: 800px;
+}
+.footer_text .footer_logo img{
+    width: 252px;
+}
+.footer_text .footer_club{
+    display: flex;
+    gap: 33px;
+    margin-top: 80px;
+}
+.footer_text .footer_club a{
+    padding-left: 29px;
+    padding-right: 29px;
+    height: 60px;
+    background: var(--brand_color);
+}
+.footer_text .footer_club a h2{
+    width: 73px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+    text-align: center;
+}
+.footer_text .footer_club p{
+    width: 373px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #fff;
+}
+.footer_text span{
+    width: 536px;
+    height: 2px;
+    background: #fff;
+    margin-top: 52px;
+    margin-bottom: 73px;
+    display: inline-block;
+}
+.footer_contact{
+    display: flex;
+    gap: 30px;
+}
+.footer_contact .footer_contact_head h2{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--ibm);
+    color: #fff;
+}
+.footer_contact_info p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #fff;
+}
+.footer_contact_info a{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #fff;
+    display: block;
+}
+.footer_contact_info .contact_1{
+    margin: 32px 0;
+}
+.license{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--ibm);
+    color: #fff;
+    margin-top: 62px;
+}
+/* ------------------------ footer css part end   -------------------- */
